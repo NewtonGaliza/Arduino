@@ -1,6 +1,6 @@
 int pin = 9;
-int ligado = 500;
-int desligado = 300;
+int on = 500;
+int off = 300;
 
 
 void setup() {
@@ -12,8 +12,8 @@ void setup() {
 void loop() {
  
   digitalWrite(pin, HIGH);
-  delay(ligado);
+  delay(on);
   digitalWrite(pin, LOW);
-  delay(desligado);
+  delay(off);
 
 }
