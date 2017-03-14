@@ -1,9 +1,9 @@
 int pin1 = 9;
 int pin2 = 8;
-int pin1ligado = 250;
-int pin1desligado = 200;
-int pin2ligado = 250;
-int pin2desligado= 200;
+int pin1on = 250;
+int pin1off = 200;
+int pin2on = 250;
+int pin2off= 200;
 
 void setup() {
   
@@ -16,15 +16,14 @@ void loop() {
 
 for (int i = 0; i < 10; i++ ){
  digitalWrite(pin1, HIGH);
- delay(pin1ligado);
+ delay(pin1on);
  digitalWrite(pin1, LOW);
- delay(pin1desligado);
+ delay(pin1off);
    if (i % 2 == 0){
    digitalWrite(pin2, HIGH);
-   delay(pin2ligado);
+   delay(pin2on);
    digitalWrite(pin2, LOW);
-   delay(pin2desligado);
+   delay(pin2off);
     }
 }
-
 }
